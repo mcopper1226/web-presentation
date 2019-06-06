@@ -4,11 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>McIntire Web 3.0</title>
+		<link rel="stylesheet" href="https://use.typekit.net/vfs7vov.css">
+
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/mcintire.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,12 +23,355 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section class="left">
+					<section>
+
+							<img class="arrow" src="lib/img/arrow.svg"/>
+							<h1>McIntire Web 3.0</h1>
+							<h3 class="subtext">Architecture & Process</h3>
+
+					</section>
+					<section data-transition="fade-in slide-out">
+
+							<h2>Agenda</h2>
+							<ul class="blue__bullets">
+								<li class="fragment fade-up">Where We're Headed & Why</li>
+								<li class="fragment fade-up">Future Opportunities</li>
+								<li class="fragment fade-up">Process</li>
+
+							</ul>
+
+					</section>
+				</section>
+
+					<section>
+						<h2 class="lined">Current State</h2>
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img class="fragment fade-up" src="lib/img/currentArch-01.svg"/></div>
+							<div class="absImage__wrap"><img class="fragment fade-up" src="lib/img/currentArch-02.svg"/></div>
+							<div class="absImage__wrap"><img class="fragment fade-up" src="lib/img/currentArch-03.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+
+
+
+					</section>
+					<section class="left">
+
+						<h2 class="lined">Challenges</h2>
+						<ul class="blue__bullets">
+							<li class="fragment fade-up">Rigid structure</li>
+							<li class="fragment fade-up">Expensive and time-consuming to maintain</li>
+							<li class="fragment fade-up">Fragmented view of user interactions</li>
+
+						</ul>
+					</section>
+
+
+				<section>
+					<section>
+						<h2>Can We Do It Better?</h2>
+						<img class="fragment fade-up" src="https://media.giphy.com/media/vgUFOWBwBkziE/giphy.gif"/>
+					</section>
+					<section>
+						<h2 class="lined">Current State</h2>
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img src="lib/img/currentArch-01.svg"/></div>
+							<div class="absImage__wrap"><img src="lib/img/currentArch-02.svg"/></div>
+							<div class="absImage__wrap"><img src="lib/img/currentArch-03.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+					</section>
+					<section>
+						<h2 class="lined">Future State</h2>
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img src="lib/img/newArch-04.svg"/></div>
+							<div class="absImage__wrap"><img src="lib/img/newArch-05.svg"/></div>
+							<div class="absImage__wrap"><img src="lib/img/newArch-06.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+					</section>
+					<section>
+
+						<h2>An API-Driven Digital Ecosystem</h2>
+
+					</section>
+				</section>
+
+				<section>
+					<section class="left">
+						<h2 class="lined">What is an API?</h2>
+						<p>The connective tissue that allows two applications to send information (structured data) back and forth</p>
+						<img class="fragment fade-up" src="lib/img/flow-graphic-updated.jpg"/>
+					</section>
+					<section>
+						<div class="flex flex-auto">
+							<div class="image__wrap">
+								<img class="shadow" src="lib/img/commcal-New-01.jpg" />
+							</div>
+							<div class="description__wrap">
+								<h5>CommCal (Event Management)</h5>
+								<img src="lib/img/logos-01.svg" />
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="flex flex-auto">
+							<div class="image__wrap">
+								<img class="shadow" src="lib/img/video-updated.jpg" />
+							</div>
+							<div class="description__wrap">
+								<h5>Alumni Video Archive</h5>
+								<img src="lib/img/logos-03.svg" />
+							</div>
+						</div>
+
+					</section>
+					<section>
+						<div class="flex flex-auto">
+							<div class="image__wrap">
+								<img class="shadow" src="lib/img/msba-updated.jpg" />
+							</div>
+							<div class="description__wrap">
+								<h5>Upcoming MSBA Info Sessions</h5>
+								<img src="lib/img/logos-02.svg" />
+							</div>
+						</div>
+
+					</section>
+					<section data-background-iframe="https://www.youtube.com/embed/OrVskziCc4w" data-background-interactive>
+
+</section>
+
+
+
+					<section>
+						<h2 class="lined">The Breakdown</h2>
+
+						<div class="flex fg3">
+							<div class="item__outer fragment fade-left">
+								<div class="item__wrap">
+									<h5>1.</h5>
+									<p>Centralized content repository (headless Drupal)</p>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img src="lib/img/newArch-04.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+					</section>
+
+					<section>
+						<h5>Drupal CMS</h5>
+						<img class="shadow stretch" src="lib/img/drupal-updatedV2.jpg" />
+					</section>
+					<section>
+						<div class="flex flex-2">
+							<div class="flex-col">
+								<div><img class="shadow" src="lib/img/web1-updated.jpg" /></div>
+							</div>
+							<div class="flex-col flex-col-sm">
+								<div class="flex-col-dir">
+
+									<div><img class="shadow fragment fade-left" src="lib/img/publishOnce-02.jpg" /></div>
+									<div><img class="fragment fade-left" style="margin: 0" src="lib/img/watch-updated.jpg" /></div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h5>API Endpoint</h5>
+						<img class="shadow stretch" src="lib/img/json.jpg" />
+					</section>
+
+
+					<section>
+						<h2 class="lined">The Breakdown</h2>
+						<div class="flex fg3">
+							<div class="item__outer">
+								<div class="item__wrap">
+									<h5>1.</h5>
+									<p>Centralized content repository (headless Drupal)</p>
+								</div>
+							</div>
+							<div class="item__outer fragment fade-left">
+								<div class="item__wrap">
+									<h5>2.</h5>
+									<p>Direct integrations with third-party tools</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img src="lib/img/newArch-04.svg"/></div>
+							<div class="absImage__wrap"><img class="fragment fade-up" src="lib/img/newArch-05.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+					</section>
+					<section>
+						<h2 class="lined">The Breakdown</h2>
+
+						<div class="flex fg3">
+							<div class="item__outer">
+								<div class="item__wrap">
+									<h5>1.</h5>
+									<p>Centralized content repository (headless Drupal)</p>
+								</div>
+							</div>
+							<div class="item__outer">
+								<div class="item__wrap">
+									<h5>2.</h5>
+									<p>Direct integrations with third-party tools</p>
+								</div>
+							</div>
+							<div class="item__outer fragment fade-left">
+								<div class="item__wrap">
+									<h5>3.</h5>
+									<p>End-to-end web analytics collection</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section>
+
+						<div class="arch__wrap" style="position: relative">
+							<div class="absImage__wrap"><img src="lib/img/newArch-04.svg"/></div>
+							<div class="absImage__wrap"><img src="lib/img/newArch-05.svg"/></div>
+							<div class="absImage__wrap"><img class="fragment fade-up" src="lib/img/newArch-06.svg"/></div>
+							<svg viewBox="0 0 2 1" class="aspect"><rect x="0" y="0" width="2" height="1" /></svg>
+						</div>
+					</section>
+				</section>
+
+
+
+			<section>
+				<section class="left">
+
+					<h2 class="lined" style="margin-bottom: 0;">WIIFM</h2>
+					<p style="margin-top: 0;">(What's In It For McIntire)</p>
+					<ul class="blue__bullets">
+						<li class="fragment fade-up">Exceptional user experience</li>
+						<li class="fragment fade-up">Streamlined content management workflows</li>
+						<li class="fragment fade-up">Reduced timelines and financial burdens</li>
+						<li class="fragment fade-up">Robust analytics and data insights</li>
+						<li class="fragment fade-up">Future-ready!</li>
+					</ul>
+
+				</section>
+				<section>
+
+					<h2>Save money, increase efficiency, drive innovation</h2>
+
+				</section>
+			</section>
+
+
+				<section>
+
+						<h5>App for Student Services</h5>
+						<img src="lib/img/app.jpg" />
+
+				</section>
+				<section>
+
+						<h5>First-time user vs. user with 3 prior visits</h5>
+						<img src="lib/img/conditionalUpdate.jpg" />
+
+				</section>
+				<section>
+
+
+						<h5>Student Portal/Digital Signage</h5>
+						<img src="lib/img/digitalsignage.jpg" />
+
+				</section>
+				<section>
+
+
+						<h5>Conversational UIs and IoT Devices</h5>
+						<img src="lib/img/alexa.jpg" />
+
+				</section>
+				<section>
+					<section>
+						<h5>User Journeys</h5>
+						<div class="flex flex-2">
+							<div class="flex-col">
+								<div><img class="shadow" src="lib/img/linkedInAd2.jpg" /></div>
+							</div>
+							<div class="flex-col">
+
+									<div><img class="shadow fragment fade-left" src="lib/img/ms-commUpdated.jpg" /></div>
+
+							</div>
+						</div>
+					</section>
+					<section>
+
+						<div class="flex flex-2">
+							<div class="flex-col">
+								<div><img class="shadow" src="lib/img/slateInfo.jpg" /></div>
+							</div>
+							<div class="flex-col">
+								<div class="flex-col-dir">
+
+									<div><img class="shadow fragment fade-left" src="lib/img/analytics-01.svg" /></div>
+									<div><img class="fragment fade-left" style="margin: 0" src="lib/img/analytics-02.svg" /></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+				<section>
+					<h5>CRM Integration</h5>
+					<div class="flex flex-2">
+						<div class="flex-col">
+							<div><img class="shadow" src="lib/img/newsletter.jpg" /></div>
+						</div>
+						<div class="flex-col flex-col-sm">
+							<div class="flex-col-dir">
+
+								<div><img class="shadow fragment fade-left" src="lib/img/galantChallenge.jpg" /></div>
+								<div><img class="shadow fragment fade-left" style="margin: 0" src="lib/img/salesforce.jpg" /></div>
+							</div>
+						</div>
+
+					</div>
+				</section>
+				<section>
+
+					<img style="height: 60vh" src="https://media.giphy.com/media/HSSMIbba6VGw/giphy.gif"/>
+				</section>
+				<section class="left">
+					<h2 class="lined">The Process</h2>
+					<ul class="blue__bullets">
+						<li class="fragment fade-in">Focus Groups</li>
+						<li class="fragment fade-in">Internal Stakeholder Surveys</li>
+						<li class="fragment fade-in">One-on-One Discovery Meetings</li>
+						<li class="fragment fade-in">Information Achitecture Review</li>
+					</ul>
+				</section>
+				<section class="left">
+					<h2 class="lined">What We're Asking From You</h2>
+					<ul class="blue__bullets">
+						<li class="fragment fade-in">Get excited about the possibilities</li>
+						<li class="fragment fade-in">Engage fully in the discovery process</li>
+						<li class="fragment fade-in">Data stewardship innovation</li>
+					</ul>
+				</section>
 			</div>
 		</div>
 
@@ -41,7 +386,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true }
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
 				]
 			});
 		</script>

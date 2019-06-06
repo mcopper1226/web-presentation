@@ -1,0 +1,287 @@
+/**
+ * White theme for reveal.js. This is the opposite of the 'black' theme.
+ *
+ * By Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+// Include theme-specific fonts
+@import url(../../lib/font/source-sans-pro/source-sans-pro.css);
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+// Fonts
+$fg: 'franklin-gothic-urw', sans-serif;
+$fg-comp: 'franklin-gothic-urw-comp', sans-serif;
+$bodoni: 'bodoni-urw', serif;
+$font-family: $fg;
+$font-size: 16px;
+$font-size-min: 13px;
+$line-height: 1.5;
+
+$mainFontSize: 42px;
+$mainFont: $fg;
+$headingFont: $fg;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingFontWeight: 700;
+$linkColor: #2a76dd;
+$linkColorHover: lighten( $linkColor, 15% );
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+
+// Colors
+$color-font: #525355;
+$color-background: #fff;
+$color-primary: red;
+$color-placeholder: #ddd;
+$orange: #e57200;
+$navy: #232d4b;
+$magenta: #ef3f6b;
+$green: #62bb46;
+$teal: #25cad3;
+$yellow: #fdda24;
+
+$mainColor: #222;
+$headingColor: $navy;
+
+
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+	&, h1, h2, h3, h4, h5, h6 {
+		color: #fff;
+	}
+}
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
+
+h2.lined {
+	position: relative;
+	text-align: left;
+	&:before {
+		content: '';
+		width: calc((100vw - 960px)/2);
+		background: $orange;
+		height: 8px;
+		position: absolute;
+		left: calc(((100vw - 920px)/2)*-1);
+		top: 50%;
+		margin-top: -4px;
+	}
+}
+p.grad-lined {
+	position: relative;
+	text-align: left;
+	padding-left: 200px;
+	&:before {
+		content: '';
+		width: 180px;
+		background: linear-gradient(to right, $orange, $magenta);
+		height: 8px;
+		position: absolute;
+		left: 0;
+		top: 26px;
+	}
+}
+
+ul.blue__bullets {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	li {
+		padding-left: 20px;
+		line-height: 60px;
+		position: relative;
+		&:after {
+			content: '';
+			width: 10px;
+			height: 10px;
+			background: $navy;
+			position: absolute;
+			left: 0;
+			top: 30px;
+			margin-top: -5px;
+		}
+	}
+}
+
+.reveal h4 {
+	font-family: $fg-comp;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	font-size: 28px;
+	color: $teal;
+	text-align: left;
+	line-height: 1;
+	margin: 0;
+}
+
+.reveal {
+	&:after {
+		content: '';
+		width: 200px;
+		height: 12px;
+		background: linear-gradient(to right, rgba($magenta, .8) 0%,rgba($magenta, 1) 50%,rgba($magenta, .15) 50%,rgba($magenta, .3) 100%);
+		position: absolute;
+		top: 5vw;
+		right: 0;
+
+	}
+	&:before {
+		content: '';
+		width: 160px;
+		height: 12px;
+		background: linear-gradient(to right, rgba($green, .8) 0%,rgba($green, 1) 50%,rgba($green, .15) 50%,rgba($green, .3) 100%);
+		position: absolute;
+		top: 3vw;
+		right: 150px;
+
+	}
+}
+
+.reveal section.left {
+	text-align: left !important;
+}
+
+.arrow {
+	width: 5vw;
+	height: 5vw;
+}
+.reveal h1 {
+	margin: 0 !important;
+}
+.reveal h3.subtext {
+	color: $orange;
+	font-size: 50px;
+	position: relative;
+	padding-left: 200px;
+	&:before {
+		content: '';
+		width: calc((100vw - 760px)/2);
+		background: $magenta;
+		height: 8px;
+		position: absolute;
+		left: calc(((100vw - 1080px)/2)*-1);
+		top: 50%;
+		margin-top: -4px;
+	}
+}
+
+.fg3 {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-left: -20px;
+  margin-right: -20px;
+  list-style: none; }
+  .fg3 > * {
+    padding: 20px;
+    flex-basis: 100%;
+    max-width: 100%; }
+    @media (min-width: 720px) {
+      .fg3 > * {
+        flex-basis: 100%;
+        max-width: 100%; } }
+    @media (min-width: 959px) {
+      .fg3 > * {
+        flex-basis: 33.33333%;
+        max-width: 33.33333%; } }
+    @media (min-width: 1279px) {
+      .fg3 > * {
+        flex-basis: 33.33333%;
+        max-width: 33.33333%; } }
+
+.item__wrap {
+	background: #f7f7f7;
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.2);
+	height: 100%;
+	padding: 20px;
+	text-align: left;
+	h5 {
+		font-size: 30px;
+	}
+	p {
+		font-size: 28px;
+	}
+}
+
+.reveal img.shadow {
+	box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+	margin: 0 !important;
+}
+
+.reveal h5 {
+	font-size: 22px;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-auto {
+	.description__wrap {
+		flex: 0 0 300px;
+		margin-left: 20px;
+		text-align: left;
+		p {
+			font-size: 24px;
+		}
+	}
+	.image__wrap {
+		flex: 1;
+	}
+}
+.aspect {
+  width: 100%;
+  z-index: -10;
+  position: relative;
+  opacity: 0;
+}
+.absImage__wrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	img {
+		margin: 0 !important;
+	}
+}
+
+.flex-col {
+	flex: 1;
+
+}
+.flex-2 {
+	height: 90%; 
+}
+
+	.flex-col-sm {
+		flex: 0 0 35%;
+		margin-left: 40px;
+	}
+
+	.flex-col-dir {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+		& > * {
+			flex: 0 0 50%;
+		}
+	}
