@@ -130,7 +130,9 @@ ul.blue__bullets {
 	line-height: 1;
 	margin: 0;
 }
-
+.reveal p strong {
+	color: $teal;
+}
 .reveal {
 	&:after {
 		content: '';
@@ -158,6 +160,12 @@ ul.blue__bullets {
 	text-align: left !important;
 }
 
+.reveal a {
+	color: $teal;
+	&:hover {
+		color: $orange;
+	}
+}
 .arrow {
 	width: 5vw;
 	height: 5vw;
@@ -269,7 +277,7 @@ ul.blue__bullets {
 
 }
 .flex-2 {
-	height: 90%; 
+	height: 90%;
 }
 
 	.flex-col-sm {
